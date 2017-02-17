@@ -1,0 +1,91 @@
+<!-- ************* Carrinho de Compras Topo **************** --> 
+
+<a href='AddProduto.asp?IDLoja=<IDLoja>&Finaliza=1' class='EstLinkCestaFC' style="width:225px; display:block; float:right; margin:20px -18px 0px 0px; text-decoration:none">
+
+      <script>
+      var IDLoja="<IDLojaNum>";
+      if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+        }
+      else
+        {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      xmlhttp.open("GET","XMLCart.asp?IDLoja="+IDLoja+"",false);
+      xmlhttp.send();
+      xmlDoc=xmlhttp.responseXML; 
+      
+      var x=xmlDoc.getElementsByTagName("item");
+      var z=xmlDoc.getElementsByTagName("cart");
+      
+      try{currencyProdCart=(z[0].getElementsByTagName("currency")[0].childNodes[0].nodeValue);}
+      catch(e){currencyProdCart=""}
+      try{TotalQtyProdCart=(z[0].getElementsByTagName("TotalQty")[0].childNodes[0].nodeValue);}
+      catch(e){TotalQtyProdCart="0"}
+      try{subtotalProdCart=(z[0].getElementsByTagName("subtotal")[0].childNodes[0].nodeValue);}
+      catch(e){subtotalProdCart="0"}
+      
+      var QtdCesta=TotalQtyProdCart;
+      if (QtdCesta>=0){
+      document.write("      <style>");
+      document.write("      .EstFundoTableExtFC{ background:url(https://www.rumo.com.br/lojas/00007850/images/Carrinho_loja.png) no-repeat; padding:10px; color:#000; font-size:9pt; font-family:verdana;}");
+      document.write("      .EstLinkCestaFC { font-size:10pt;font-family:tahoma,verdana,arial;color:#000;text-align:center;text-decoration:underline}");
+      document.write("      .EstPrecoProdCapaXML {color:#930000;font-size:8pt;font-family:arial;font-weight:bold; }");
+      document.write("      .EstTitXML {font-size:8pt;color:#333333;font-family:tahoma,verdana;font-weight:bold;}");
+      document.write("      </style>");
+      document.write("<table width='225' height='75' cellspacing='4' cellpadding='0' border='0' class='EstFundoTableExtFC'>");
+      document.write("  <tr>");
+      document.write("    <td align='center'>");
+
+      
+
+      document.write("    </td>");
+      document.write("  </tr>");
+      document.write("  <tr>");
+      document.write("    <td align='right'>");
+      document.write("      <b>Carrinho:</b>  ("+ QtdCesta +") Itens");
+      document.write("    </td>");
+      document.write("  </tr>");
+      document.write("  <tr>");
+      document.write("    <td align='right'>");
+      document.write("      <b>Subtotal:</b>  "+ currencyProdCart +" " + subtotalProdCart);
+      document.write("    </td>");
+      document.write("  </tr>");
+      document.write("  <tr>");
+      document.write("    <td>");
+      document.write("       ");
+      document.write("    </td>");
+      document.write("  </tr>");
+      document.write("</table>");
+      }
+      </script>
+
+</a>
+
+<!-- ************* FIM Carrinho de Compras Topo **************** -->
+
+<div style="width:380px; float:left; font-family:verdana,arial; background-color:#f3f3f3; -moz-border-radius:30px 30px 5px 5px; -webkit-border-radius:30px 30px 5px 5px; border-radius:30px 30px 5px 5px; padding:5px 30px; border:1px solid #e9e9e9; text-align:left; margin-top:20px;">
+
+<p style="font-size:14px; color:#000; margin:5px 0px;">Encontre nossos produtos:</p>
+
+ <form name="fBusca" method="POST" id="autocomplete-form" action="listaProdutos.asp?IDLoja=<IDLoja>" onSubmit="return VerTexto(this)">
+
+	<input type="text" name="Texto" class="InputTextBusca" id="autocomplete" style=" font-size:13px; float:left; width:380px; height:38px;-moz-border-radius:15px; -webkit-border-radius:15px; border-radius:10px; border:1px solid #b7b7b7; background-color:#fff">
+
+
+<input type="submit" name="ok" value="Ok" style=" float:left; margin-left:-55px; margin-top:5px; background-color:#1c3069; padding:4px 12px 4px 12px; color:#fff; font-size:17px;-moz-border-radius:15px; -webkit-border-radius:15px; border-radius:10px; border:0">
+
+</form>
+<div style="clear:both"></div>
+
+<p style="font-size:12px; color:#000; margin:5px 0px;">
+            <script>
+            if(''!='<NomeCliente>')
+              {document.write('Olá, <b><NomeCliente></b>! Se não for você, <a target=_top href=https://www.rumo.com.br/sistema/cadastro.asp?IDLoja=<IDLoja>>Clique Aqui</a>.')}
+            else 
+              {document.write('Olá, <b>Visitante!</b> Faça Seu Cadastro <a target=_top href=https://www.rumo.com.br/sistema/cadastro.asp?IDLoja=<IDLoja>> Clicando Aqui</a>.')}
+            </script>
+</p>
+
+</div>
