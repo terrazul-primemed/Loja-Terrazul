@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+   <head>
+      <title>XML</title>
+      <style>
+      .EstCestaTxt{font-size:8pt;font-family:tahoma,verdana;}
+      .EstTabTopoXML {padding:2px 2px 2px 2px;color:#333333;font-size:9pt;font-family:verdana;font-weight:bold;border-style:solid;border-width:0px;border-color:#000}
+      </style>
+   </head>
+   <body>
+
+	
+<table border="0" width="157" height="76" class="EstTabTopoXML" style="background:url(https://www.rumo.com.br/lojas/00007850/images/Carrinho_loja.png) no-repeat; padding-left:70px;">
+	  <tr>
+	    <td class="EstCestaTxt" align="left">
+			<table width="227" border="0">
+			  <tr>
+			    <td class="EstCestaTxt" align="left" width="50%">
+			      <b>Carrinho: </b> 0<xsl:value-of select="cart/TotalQty"/> itens
+			    </td></tr>
+                             <tr>
+			    <td class="EstCestaTxt" align="left">
+			      <b>Sub-total: </b><xsl:text disable-output-escaping="yes"> </xsl:text><xsl:value-of select="cart/currency"/><xsl:text disable-output-escaping="yes"> </xsl:text><xsl:value-of select="cart/subtotal"/>
+			    </td>
+			   </tr>
+			</table>
+	    </td>
+	  </tr>
+	</table>
+
+   </body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
