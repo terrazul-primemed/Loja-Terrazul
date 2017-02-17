@@ -1,0 +1,170 @@
+<script>
+IDLoja='IDLoja=<IDLoja>' //Obtém IDLoja para montar links
+</script>
+<script src=<BaseLoja>htm/LojaLib.js></script>
+<script>
+MM_preloadImages('<BaseLoja>images/FundoMenu1_Hover.gif','<BaseLoja>images/FundoMenu1_On.gif','<BaseLoja>images/FundoMenu1_Off.gif','<BaseLoja>images/FundoMenu2_Hover.gif','<BaseLoja>images/FundoMenu2_On.gif','<BaseLoja>images/FundoMenu2_Off.gif');
+</script>
+
+
+
+<table width=100% cellspacing=0 cellpadding=0 bgcolor=#FFFFFF>
+ <tr>
+ <td align=justify>
+
+    <object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="994" height="26" align="middle">
+	<param name="movie" value="https://www.rumo.com.br/lojas/00007850/htm/MenuLoja.SWF">
+	<param name="quality" value="High">
+	<param name="bgcolor" value="#2f9af2">
+	<param name="wmode" value="Transparent">
+	<embed src="https://www.rumo.com.br/lojas/00007850/htm/MenuLoja.SWF" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="994" height="26" quality="High" bgcolor="#2f9af2"></object>
+
+</td></tr>
+</table>
+<table width=100% cellspacing=0 cellpadding=0 height=22>
+  <tr>
+    <form method=POST action=https://www.rumo.com.br/sistema/cadastro.asp?IDLoja=<IDLoja> name=CadastroTopo target=_top></form>
+    <form method=POST action=https://www.rumo.com.br/sistema/track.asp?IDLoja=<IDLoja> name=TrackTopo target=_top></form>
+
+    <td align=center>
+        <script>
+        if(sPag.indexOf("CADASTRO")>=0){
+          document.write('<table width=100% class=FundoMenu1_On align=center OnClick="document.CadastroTopo.submit();" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu1.gif hspace=3></td><td>Cadastro</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu1_Off align=center OnMouseOut="this.className=FundoMenu1_Off" OnMouseOver="this.className=FundoMenu1_Hover" OnClick="document.CadastroTopo.submit();" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu1.gif hspace=3></td><td>Cadastro</td></tr></table>');}
+        </script>
+    </td>
+
+    <td align=center>
+        <script>
+        if(sPag.indexOf("NEWSLETTER")>=0){
+          document.write('<table width=100% class=FundoMenu1_On align=center OnClick="window.location.href=LinkNews" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu3.gif hspace=3></td><td>Newsletter</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu1_Off align=center OnMouseOut="this.className=FundoMenu1_Off" OnMouseOver="this.className=FundoMenu1_Hover" OnClick="window.location.href=LinkNews" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu3.gif hspace=3></td><td>Newsletter</td></tr></table>');}
+        </script>
+    </td>
+
+    <td align=center>
+        <script>
+        if(sPag.indexOf("TRACK")>=0){
+          document.write('<table width=100% class=FundoMenu1_On align=center OnClick="document.TrackTopo.submit();" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu2.gif hspace=3></td><td>Pedidos anteriores</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu1_Off align=center OnMouseOut="this.className=FundoMenu1_Off" OnMouseOver="this.className=FundoMenu1_Hover" OnClick="document.TrackTopo.submit();" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu2.gif hspace=3></td><td>Pedidos anteriores</td></tr></table>');}
+        </script>
+    </td>
+
+    <td align=center>
+        <script>
+          document.write('<table width=100% class=FundoMenu1_Off align=center OnMouseOut="this.className=FundoMenu1_Off" OnMouseOver="this.className=FundoMenu1_Hover" OnClick="MostraChatP()" cellspacing=0 cellpadding=0><tr><td width=35 align=right><img src=<BaseLoja>images/IcMenu5.gif hspace=3></td><td>Atendimento on-line</td></tr></table>');
+        </script>
+    </td>
+
+    <td align=center>
+        <script>
+        if(sPag.indexOf("INDIQUE")>=0){
+          document.write('<table width=100% class=FundoMenu1_On align=center OnClick="window.location.href=LinkIndique" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu4.gif hspace=3></td><td>Indique a loja</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu1_Off align=center OnMouseOut="this.className=FundoMenu1_Off" OnMouseOver="this.className=FundoMenu1_Hover" OnClick="window.location.href=LinkIndique" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu4.gif hspace=3></td><td>Indique a loja</td></tr></table>');}
+        </script>
+    </td>
+
+    <td align=center>
+        <script>
+        if(sPag.indexOf("FALE")>=0){
+          document.write('<table width=100% class=FundoMenu1_On align=center OnClick="window.location.href=LinkContato" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu3.gif hspace=3></td><td>Fale conosco</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu1_Off align=center OnMouseOut="this.className=FundoMenu1_Off" OnMouseOver="this.className=FundoMenu1_Hover" OnClick="window.location.href=LinkContato" cellspacing=0 cellpadding=0><tr><td width=30 align=right><img src=<BaseLoja>images/IcMenu3.gif hspace=3></td><td>Fale conosco</td></tr></table>');}
+        </script>
+    </td>
+
+  </tr>
+</table>
+
+<table width=100% cellspacing=0 cellpadding=0 bgcolor=#FFFFFF><tr><td></td></tr></table>
+
+<table width=100% cellspacing=1 cellpadding=0 height=29>
+  <tr>
+    <td align=center>
+        <script>
+        if(sPag.indexOf("HOME")>=0){
+          document.write('<table width=100% class=FundoMenu2_On align=center OnClick="window.location.href=LinkHome" cellspacing=0 cellpadding=0><tr><td align=center>Início</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu2_Off align=center OnMouseOut="this.className=FundoMenu2_Off" OnMouseOver="this.className=FundoMenu2_Hover" OnClick="window.location.href=LinkHome" cellspacing=0 cellpadding=0><tr><td align=center>Início</td></tr></table>');}
+        </script>
+    </td>
+    <td align=center>
+        <script>
+        if(sPag.indexOf("CATEGORIAS")>=0){
+          document.write('<table width=100% class=FundoMenu2_On align=center OnClick="window.location.href=LinkCat" cellspacing=0 cellpadding=0><tr><td align=center><categorias></td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu2_Off align=center OnMouseOut="this.className=FundoMenu2_Off" OnMouseOver="this.className=FundoMenu2_Hover" OnClick="window.location.href=LinkCat" cellspacing=0 cellpadding=0><tr><td align=center><categorias></td></tr></table>');}
+        </script>
+    </td>
+    <td align=center>
+        <script>
+        if(sPag.indexOf("LISTA")>=0 && sPag.indexOf("PROM")>=0){
+          document.write('<table width=100% class=FundoMenu2_On align=center OnClick="window.location.href=LinkProm" cellspacing=0 cellpadding=0><tr><td align=center>Promoções</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu2_Off align=center OnMouseOut="this.className=FundoMenu2_Off" OnMouseOver="this.className=FundoMenu2_Hover" OnClick="window.location.href=LinkProm" cellspacing=0 cellpadding=0><tr><td align=center>Promoções</td></tr></table>');}
+        </script>
+    </td>
+    <td align=center>
+        <script>
+        if(sPag.indexOf("LISTA")>=0 && sPag.indexOf("LANC")>=0){
+          document.write('<table width=100% class=FundoMenu2_On align=center OnClick="window.location.href=LinkLanc" cellspacing=0 cellpadding=0><tr><td align=center>Lançamentos</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu2_Off align=center OnMouseOut="this.className=FundoMenu2_Off" OnMouseOver="this.className=FundoMenu2_Hover" OnClick="window.location.href=LinkLanc" cellspacing=0 cellpadding=0><tr><td align=center>Lançamentos</td></tr></table>');}
+        </script>
+    </td>
+    <td align=center>
+        <script>
+        if(sPag.indexOf("ADDPROD")>=0){
+          document.write('<table width=100% class=FundoMenu2_On align=center OnClick="window.location.href=LinkPedido" cellspacing=0 cellpadding=0><tr><td align=center>Seu pedido</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu2_Off align=center OnMouseOut="this.className=FundoMenu2_Off" OnMouseOver="this.className=FundoMenu2_Hover" OnClick="window.location.href=LinkPedido" cellspacing=0 cellpadding=0><tr><td align=center>Seu pedido</td></tr></table>');}
+        </script>
+    </td>
+    <td align=center>
+        <script>
+        if(sPag.indexOf("AJUDA")>=0){
+          document.write('<table width=100% class=FundoMenu2_On align=center OnClick="window.location.href=LinkAjuda" cellspacing=0 cellpadding=0><tr><td align=center>Ajuda</td></tr></table>');}
+         else{
+          document.write('<table width=100% class=FundoMenu2_Off align=center OnMouseOut="this.className=FundoMenu2_Off" OnMouseOver="this.className=FundoMenu2_Hover" OnClick="window.location.href=LinkAjuda" cellspacing=0 cellpadding=0><tr><td align=center>Ajuda</td></tr></table>');}
+        </script>
+    </td>
+  </tr>
+</table>
+<table class=FundoTopoInf width=100% cellspacing=1 cellpadding=2 height=39>
+  <tr>
+    <td>
+      <table align=center width=100%>
+        <tr>
+          <td width=5>&nbsp;</td>
+          <td>
+            <script>
+            if(''!='<NomeCliente>')
+              {document.write('<span class=TextoPequeno>Olá, <b><NomeCliente></b>!<br><span class=TextoPequeno>Se não for você, <a target=_top href=https://www.rumo.com.br/sistema/cadastro.asp?IDLoja=<IDLoja> class=TextoPequeno>clique</a>.</span>')}
+            else 
+              {document.write('<span class=TextoPequeno>Olá, <b>visitante</b>!<br><a target=_top href=https://www.rumo.com.br/sistema/cadastro.asp?IDLoja=<IDLoja> class=TextoPequeno>Clique</a> para fazer o seu cadastro.')}
+            </script>
+          </td>  
+          <td width=10>&nbsp;</td>
+          <td><img src=<BaseLoja>images/okseta.GIF></td>
+          <td><a href=listaProdutos.asp?IDLoja=<IDLoja>&IDCategoria=57717 class=MenuInf>Softwares</a></td>
+          <td width=10>&nbsp;</td>
+          <td><img src=<BaseLoja>images/okseta.GIF></td>
+          <td><a href=listaProdutos.asp?IDLoja=<IDLoja>&IDCategoria=57720 class=MenuInf>Aparelhos</a></td>
+          <td width=10>&nbsp;</td>
+          <td><img src=<BaseLoja>images/okseta.GIF></td>
+          <td><a href=listaProdutos.asp?IDLoja=<IDLoja>&IDCategoria=59094 class=MenuInf>Livros</a></td>
+          <td width=10>&nbsp;</td>
+          <td><img src=<BaseLoja>images/okseta.GIF></td>
+          <td><a href=listaProdutos.asp?IDLoja=<IDLoja>&IDCategoria=59158 class=MenuInf>Dvd's</a></td>
+          <td width=10>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
