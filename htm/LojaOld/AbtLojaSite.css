@@ -1,0 +1,238 @@
+/* FastCommerce - Estilo Personalizado (1) */
+
+body {font-size:8pt;font-family:verdana,arial}
+p {font-size:8pt;font-family:verdana,arial}
+TH {background:#FFFFCC;color:#336699;font-size:9pt;font-family:verdana,arial}
+TD {font-size:8pt;font-family:verdana,arial}
+
+/* Estilos de fundo */
+.FundoSiteCentro{background:0}
+.FundoTopoExt{background:0}
+.FundoSiteInt{background:#FFFFFF}
+
+/* Estilos para as páginas */
+.Titulos {color:#0060A0;font-size:9pt;font-family:verdana;text-decoration:none;font-weight:bold}
+.smSelect {font-size:9pt; height:25px; font-family:tahoma,verdana}
+.smText {font-size:8pt;font-family:tahoma,verdana}
+.mnText {font-size:7pt;font-family:tahoma,verdana}
+.mdtxt {font-size:9pt;font-family:verdana,arial}
+.lgtxt {font-size:10pt;font-weight:bold;color:navy;font-family:verdana,arial;text-decoration:none}
+.TextoPequeno {font-size:7pt;font-family:tahoma,verdana}
+
+/* Estilos para a capa */
+.EstFotoProd {height:120}
+.EstTexto1 {font-size:8pt;font-family:tahoma,verdana}
+.EstTexto2 {font-size:8pt;font-family:tahoma,verdana}
+.EstTexto3 {font-size:8pt;font-family:tahoma,verdana}
+.EstTexto4 {font-size:8pt;font-family:tahoma,verdana}
+.EstTexto5 {font-size:8pt;font-family:tahoma,verdana}
+.EstNomeProdCapa {font-family:tahoma,verdana;font-size:8pt;font-weight:bold;color:#015078;text-decoration:none}
+.EstNomeProdCapa:visited {color:#0060A0}
+.EstNomeProdCapa:active {color:#F5D957}
+.EstNomeProdCapa:hover {color:#333333;text-decoration:underline}
+.EstListaNomeProdCapa {font-size:8pt;font-family:tahoma,verdana}
+.EstDescrProdCapa {font-size:8pt;font-family:tahoma,verdana}
+.EstAdicProdCapa {font-size:8pt;font-family:verdana,arial}
+.AdicNomeCapa {font-size:8pt;font-family:tahoma,verdana}
+.AdicItemCapa {font-size:8pt;font-family:tahoma,verdana;font-weight:bold;color:#0060A0}
+.EstPrecoProdCapa {color:#930000;font-size:8pt;font-family:arial}
+.EstFundoTabCapa {background:#FFFFFF;font-size:8pt;font-family:arial}
+
+/* Estilos para a Barra */
+.FundoBarraDireita{}
+.EstTitSecao {background:#EFEFEF;font-size:8pt;color:#333333;font-family:tahoma,verdana;font-weight:bold}
+.EstCorTabExt {background:#EFEFEF}
+.EstCorTabInt {background:#FFFFFF}
+.EstCorTabPromExt {background:#EFEFEF}
+.EstCorTabPromInt {background:#F9F9F9}
+.EstListaNomeProdBarra {font-size:8pt;font-family:tahoma,verdana;font-weight:bold;color:#928A44}
+.EstPrecoProdBarra {font-size:8pt;color:#990000;font-family:arial,Helvetica,sans-serif}
+.EstLinhaBarra {background:#DDDDDD}
+.EstLinhaBarraExt{background:#FFFFFF}
+
+/*  Estilo para os formulários BOTÕES e INPUTs TEXT */
+.InputText { 	
+-moz-border-radius:5px; 
+-webkit-border-radius:5px;
+border-radius:5px;
+border:1px solid #cccccc;
+background-color:#F5F5F5;
+font-size:12px;
+font-family:verdana;
+color:#545B8F;
+padding:6px 5px;
+}
+
+.InputTextBusca {
+border:1px solid #cccccc;
+background-color:#F5F5F5;
+font-size:12px; 
+font-family:verdana;
+color:#545B8F;
+padding:3px 5px;
+}
+.InputButton {
+padding:5px 12px;
+font-size:13px;
+color:#545B8F;
+background-color:#F5F5F5;
+-moz-border-radius:5px; 
+-webkit-border-radius:5px;
+border-radius:5px;
+font-family:verdana;
+border:1px solid #cccccc;
+font-weight:bold;
+}
+
+/*  Estilo BOTÕES */
+.BotLancamento {color:#FF0101;font-size:7pt;font-family:verdana,arial}
+.BotComprar {color:#FFFFFF;font-size:0pt;font-family:verdana,arial;text-decoration:none}
+.BotEsgotado {font-size:8pt;font-family:verdana,arial}
+.BotExcluir {font-size:8pt;font-family:verdana,arial}
+.BotMaisDetalhes {color:#990000;font-size:7pt;font-family:verdana,arial;text-decoration:none}
+
+/*  Texto das Setas de VER MAIS */
+.BotVerMais {color:#880000;font-size:8pt;font-family:verdana,arial;font-weight:bold;text-decoration:none}
+.BotVerMais:hover {color:#FF0000;text-decoration:underline}
+
+/*  Fundo do topo e menu */
+.TopoMenu{background-image:url(images/fundotopoopus.gif)}
+.MenuTop {font-size:8pt;font-family:tahoma,verdana,arial;color:#FFFFFF;text-decoration:none}
+.MenuTop:visited {color:#FFFFFF}
+.MenuTop:active {color:#B5D6F1}
+.MenuTop:hover {color:#B5D6F1;text-decoration:underline}
+
+/*  Menu 1 (Azul) */
+.FundoMenu1_On{background-image:url(../images/fundomenu1_on.gif);cursor:default;width=100%;height:22}
+.FundoMenu1_Off{background-image:url(../images/fundomenu1_off.gif);cursor:pointer;width=100%;height:22}
+.FundoMenu1_Hover{background-image:url(../images/fundomenu1_hover.gif);cursor:pointer;width=100%;height:22}
+
+/*  Menu 2 (Cinza Meio) */
+.FundoMenu2_On{background-image:url(../images/fundomenu3_on.jpg);font-size:8pt;font-family:tahoma,verdana,arial;color:#222222;text-decoration:none;font-weight:bold;cursor:default;width=100%;height:29; margin:0; padding:0;}
+
+.FundoMenu2_Off{background-image:url(../images/fundomenu3_on.jpg);font-size:8pt;font-family:tahoma,verdana,arial;color:#30487c;text-decoration:none;font-weight:bold;cursor:pointer;width=100%;height:29}
+
+.FundoMenu2_Hover{background-image:url(../images/fundomenu3_hover.jpg);font-size:8pt;font-family:tahoma,verdana,arial;color:#222222;text-decoration:none;font-weight:bold;cursor:pointer;width=100%;height:29;-webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear;}
+
+/*  Menu inferior (Cinza) */
+.FundoTopoInf{background-image:url(../images/fundotopoinf.gif)}
+.MenuInf {font-size:9pt; padding:10px; display:block; font-family:verdana,arial; color:#a1a1a1; text-decoration:none; background:0;font-weight:bold}
+.MenuInf:active {color:#F5D957}
+.MenuInf:hover {color:#333333;}
+
+/*  Menu padrão */
+.TopoMenuAtual {font-weight:bold;font-size:8pt;font-family:tahoma,verdana;color:#333333;background:#FD7300;text-decoration:none}
+.TopoMenuAtual:visited {color:333333}
+.TopoMenuAtual:active {color:333333}
+.TopoMenuAtual:hover {color:#333333}
+.TopoMenuNormal {font-weight:bold;font-size:8pt;font-family:tahoma,verdana;color:#FFFFFF;background:#FD7300;text-decoration:none}
+.TopoMenuNormal:visited {color:#FFFFFF}
+.TopoMenuNormal:active {color:#FFFFFF}
+.TopoMenuNormal:hover {color:#333333}
+
+/*  Menu da ESQUERDA */
+.FundoBarraEsquerda {}
+.EsquerdaMenuAtual {font-size:8pt;font-family:tahoma,verdana;color:#0963AA;background:#F1F1F1;text-decoration:none;font-weight:bold}
+.EsquerdaMenuAtual:visited {color:#0963AA}
+.EsquerdaMenuAtual:active {color:#0963AA}
+.EsquerdaMenuAtual:hover {color:#000000}
+.EsquerdaMenuNormal {font-size:8pt;font-family:tahoma,verdana;color:#000000;background:#F1F1F1;text-decoration:none;font-weight:bold}
+.EsquerdaMenuNormal:visited {color:#000000}
+.EsquerdaMenuNormal:active {color:#000000}
+.EsquerdaMenuNormal:hover {color:#0963AA;text-decoration:ubderline}
+
+/*  Estilo do MENU CATEGORIA */
+.EstCatLista{background:#ebebeb; -moz-border-radius:0px 10px 10px 0px;-webkit-border-radius:0px 10px 10px 0px;border-radius:0px 10px 10px 0px ; padding:5px 5px 5px 3px; font-size:13px}
+.CategoriaMenuAtual {font-size:8pt;font-family:tahoma,verdana;color:#0963AA;background:#fff;text-decoration:none}
+.CategoriaMenuAtual:visited {color:#0963AA}
+.CategoriaMenuAtual:active {color:#0963AA}
+.CategoriaMenuAtual:hover {color:#333333; text-decoration:none}
+.CategoriaMenuNormal {font-size:8pt;font-family:tahoma,verdana;color:#000000;background:#F1F1F1;}
+.CategoriaMenuNormal:visited {color:#000000}
+.CategoriaMenuNormal:active {color:#000000}
+.CategoriaMenuNormal:hover {color:#0963AA;}
+
+/*  Estilo CATEGORIA */
+.EstCatNome {color:#000000;font-size:9pt; line-height:16px; font-family:tahoma,verdana;text-decoration:none}
+.EstCatNome:visited {color:#000000}
+.EstCatNome:hover {color:#0963AA;text-decoration:none}
+.EstCatDescr {color:black;font-size:8pt;font-family:verdana;text-decoration:none}
+
+/*  Estilo PRODUTOS */
+.EstNomeProd {color:#0060A0;font-size:14px; font-weight:bold; font-family:tahoma,verdana}
+.EstRefProd {color:#919191;font-size:7pt;font-family:verdana,arial}
+.EstDescrProd {font-size:9pt;font-family:tahoma,verdana}
+.EstPrecoProd {color:#5C5C5C; font-size:12px; font-family:arial,Helvetica;}
+.EstMaisInfo {color:black;font-size:7pt;font-family:tahoma,verdana}
+.AdicNome {font-size:8pt;font-family:tahoma,verdana}
+.AdicItem {font-size:9pt;font-family:tahoma,verdana;font-weight:bold;color:#0B4D79}
+.EstLinhaProd { border:1px dashed #cccccc; width:97%;}
+
+
+/* DETALHES dos produtos */
+.BlocoDireito { border:1px dashed #cccccc; width:100%; padding: 5px; margin: 0px 0px 20px 0px }
+.BlocoDireito p.Preco { font-size: 13px; font-family: tahoma, verdana; color:#5C5C5C }
+
+
+/*  Estilo SUBPRODUTOS */
+.EstRefSubProd {color:#000000;font-size:8pt;font-family:verdana,arial}
+.EstDescrSubProd {color:#000000;font-size:8pt;font-family:verdana,arial}
+.EstPrecoSubProd {color:#222222;font-size:8pt;font-family:arial}
+.EstLinhaSubProd {background:#B2B2B2;height:1px;width:100%}
+.EstCorParSubProd {background:#F0F0F0}
+.EstCorImparSubProd {background:#F7F7F7}
+
+/*  Estilo das opiniões de produtos */
+.EstOpiniaoLinha {border:1px dashed #ececec; width:100%}
+
+/* Estilos do PEDIDO */
+.EstTabPedidoTit {background:#dbdbdb;color:#666666;font-size:12px ;font-family:verdana,arial;font-weight:bold; padding:10px 5px;}
+.EstTabPedidoNome {color:#666666;font-size:12px;font-weight:bold;font-family:tahoma,verdana,arial;}
+.EstTabPedidoNome:visited {color:#333333}
+.EstTabPedidoNome:hover {color:#0060b0}
+.EstTabPedido {font-size:12px;background:#FFF; border-bottom:1px dashed #ececec; padding:15px 5px}
+.EstTabPedidoNum {font-size:12px;background:#FFF; border-bottom:1px dashed #ececec; font-family:verdana,arial; color:#007ab2; font-weight:bold }
+.EstTabPedidoTotal {font-size:13px;background:#efefef; padding:8px 5px; font-weight:bold; color:#666666}
+.EstTabPedidoFrete {font-size:8pt;background:#F4F4F4;font-weight:bold}
+.EstTabPedidoBot {color:#000000;font-size:8pt;font-weight:bold;font-family:verdana,arial}
+.EstTabPedidoRef {color:black;font-size:8pt;font-family:tahoma,verdana}
+.EstTabPedidoAdicNome {font-size:12px;font-family:tahoma,verdana; color:#666666}
+.EstTabPedidoAdicItem {font-size:12px;font-family:tahoma,verdana;font-weight:bold; color:#666666}
+.EstTextoQtd {font-size:8pt;font-family:tahoma,verdana;text-align:right}
+.EstContinuarComprando{font-size:9pt;font-weight:bold;font-family:tahoma,verdana;color:#990000}
+
+/* Estilo de Títulos de Tabela CADASTRO DE CLIENTES, AJUDA, CONFIRMAÇÃO DO PEDIDO */
+.EstTabTopo {padding:10px 2px 10px 2px;background:#E9E9E9;color:#666666;font-size:9pt;font-family:verdana;font-weight:bold}
+
+/* Estilo para a tabela de Busca Rápida, para tabela de Ajuda (Pagamentos) e Fale Conosco */
+.EstTabQuadro {background:#FFFFFF;font-size:12px; padding: 3px 5px; font-family:arial}
+
+/* Estilo dos campos do formulário clientes,fale conosco,... 	*/
+.EstNomeCampo {color:black;font-size:8pt;font-family:tahoma,verdana;font-weight:bold}
+.EstCampo {font-size:8pt;font-family:tahoma,verdana}
+
+/*  RODAPÉ */
+.FundoMenuRodape{background:#2D87CE}
+.RodapeMenuNormal {font-size:8pt;font-family:tahoma,verdana,arial;color:#FFFFFF;text-decoration:none}
+.RodapeMenuNormal:visited {color:#FFFFFF}
+.RodapeMenuNormal:active {color:#B5D6F1}
+.RodapeMenuNormal:hover {color:#B5D6F1;text-decoration:underline}
+.RodapeMenuAtual {font-size:8pt;font-family:tahoma,verdana,arial;color:#FFCC00;text-decoration:underline;font-weight:bold;}
+.RodapeMenuAtual:visited {color:#FFCC00}
+.RodapeMenuAtual:active {color:#DCF0FF}
+.RodapeMenuAtual:hover {color:#000000;text-decoration:underline}
+
+/*  Busca - ajax */
+.hideSuggestClass{border:1px solid #D4D4D4;cursor:pointer;background-color:#FFFFFF;height:150px;overflow:auto;display:none;width:200px;margin:0px}
+.showSuggestClass .hideSuggestClass{display:block}
+.showSuggestClass .hoverSuggestClass{background-color:#E4E4E4}
+.productMenuClass{position:absolute;z-index:255}
+.productMenuClass3{position:absolute;z-index:255}
+.productItemClass{margin-left:2px;font-weight:normal;font-size:8pt;font-family:tahoma,verdana}
+
+/* Zoom IMG Detalhe */
+.MagicZoom img {border: 0 !important;padding: 0 !important;margin: 0 !important;}
+.MagicZoomBigImageCont {border: 1px solid #999; background: #fff}
+.MagicZoomHeader {font-size: 8pt !important;line-height: normal !important;color: #fff;background: #666;text-align: center !important;}
+.MagicZoomPup {border: 1px solid #aaa;background: #fff;cursor: move;}
+.MagicZoomLoading {border: 1px solid #ccc;background: #fff url(../images/ajax-loader.gif) no-repeat 2px 50%;padding: 4px 4px 4px 24px !important;margin: 0;text-decoration: none;text-align: left;font-size: 8pt;font-family: sans-serif;color: #444;}
